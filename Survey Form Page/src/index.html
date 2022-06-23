@@ -1,0 +1,98 @@
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  
+    <head>
+     <title>University Orientation Survey Form</title>
+  </head>
+  <body>
+    <nav>
+      <ul style="list-style-type: none;">
+        <li><a href="#" target="_blank">Homepage</a></li>
+        <li><a href="#" target="_blank">Academic Calendar</a></li>
+        <li><a href="#" target="_blank">Course Registration</a></li>
+        <li><a href="#" target="_blank">Faculty Services</a></li>
+        <li><a href="#" target="_blank">Student Records</a></li>
+        <li><a href="#" target="_blank">Student Advising</a></li>
+        <li><a href="#" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <br><br>
+    <p><strong>Church University Registrar and Orientation Office</strong></p>
+    <div class="mainbox"> 
+      <img src="https://cdn.pixabay.com/photo/2019/01/01/12/15/stanford-3906631_960_720.jpg" alt="background">
+      <!--
+        Picture is of Stanford University. Credits to Pixabay, taken by user t_watanabe, free for commercial use
+      Link: https://pixabay.com/photos/stanford-university-campus-tower-3906631/
+        -->
+      
+    <div id="header">
+    <h1 id="title">Church University</h1>
+    <h2>Class of 2025 Orientation Form</h2>
+      </div>
+    </div>
+    <p id="description">
+        Thank you for taking the time to fill out our form.<br>We encourage everyone to fill all the details no later than August 31st, 2021.<br><strong>Welcome to the Church family, and go Cheetahs!</strong>
+    </p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name&emsp;</label>
+        <input id="name" type="text" required name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email&emsp;</label>
+        <input id="email" type="email" required name="email" placeholder="Enter your school email">
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">8-digit ID Number&emsp;</label>
+        <input id="number" type="number" required name="number" min="0" max="99999999" placeholder="Enter your ID">
+      </div>
+      <div class="form-group">
+        <label id="radio" for="housing">Housing Options<br></label><br>
+        <input class="housing" value="live-canterbury" type="radio" name="housing" checked >Cantenbury Hall<br>
+        <input class="housing" value="live-edgren" type="radio" name="housing">Edgren Hall<br>
+        <input class="housing" value="live-franklin" type="radio" name="housing">Franklin Hall<br>
+        <input class="housing" value="live-jansen" type="radio" name="housing">Jansen Hall<br>
+        <input class="housing" value="live-wallaby" type="radio" name="housing">Wallaby Hall<br>
+        <input class="housing" value="live-offcampus" type="radio" name="housing">Off-campus apartment<br>
+        <input id="housing" value="live-commute" type="radio" name="housing">Commute<br>
+      </div>
+      <div class="form-group">
+        <label for="department">Department&emsp;</label>
+        <select id="dropdown" name="department" required>
+          <option disabled selected value>Select department</option>
+          <option>Art and Architecture</option>
+          <option>Business School</option>
+          <option>Life Sciences</option>
+          <option>Engineering</option>
+          <option>Technology and Computer Science</option>
+          <option>Education</option>
+          <option>Liberal Arts</option>
+          <option>Music and Dance</option>
+          <option>Media and Communications</option>
+          <option>Public Health</option>
+          <option>Social Work</option>
+          <option>Film and Media Arts</option>
+          <option>Kinesiology and Physical Education</option>
+          <option>Undecided</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label id="textarea" for="excite" required>What are you most excited about?<br></label><br>
+          <input name="prefer" value="like-academics" type="checkbox">Academics<br>
+        <input name="prefer" value="like-food" type="checkbox">Food or culture<br>
+        <input name="prefer" value="like-parties" type="checkbox">Parties or social life<br>
+        <input name="prefer" value="like-independent" type="checkbox">Being independent/alone<br>
+        <input name="prefer" value="like-career" type="checkbox">Getting a job/career<br>
+        <input name="prefer" value="like-place" type="checkbox">Environment<br>
+        <input name="prefer" value="like-people" type="checkbox">People<br>
+        <input name="prefer" value="like-other" type="checkbox">Other/no clue<br>
+      </div>
+            <div class="form-group">
+        <label for="othertext">Anything else?<br></label><br>
+       <textarea id="othertext" name="othertext" placeholder="Enter any suggestions or comments here"></textarea>
+      </div>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+    <p>&copy; Church University</p>
+  </body> 
+</html>

@@ -1,0 +1,315 @@
+* {
+  font-family: 'Poppins', system-ui;
+  text-decoration: none;
+}
+#welcome-section {
+  height: 100vh;
+}
+
+#about_me {
+  height: 100vh;
+}
+#intro-name {
+  font-weight: bold;
+  font-size: 5rem;
+  margin: 0 auto;
+  animation-name: intro;
+  animation-fill-mode:forwards;
+  animation-duration:3s;
+}
+@keyframes intro {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%
+  }
+  100% {
+    opacity: 100%;
+    position: relative;
+  }
+}
+#intro-sub {
+  font-family: 'Comfortaa', system-ui;
+  font-size: 1.5em;
+  margin-top: -1em;
+}
+#intro-text {
+  margin: 0 1em;
+  margin-top: -1em;
+  font-size: 1.2em;
+  resize: none;
+}
+
+html {
+  background: linear-gradient(-60deg, rgba(48, 152, 216, 80%), #FFFFFF);
+  text-align: center;
+  padding-left: 1em;
+  padding-top: 3em;
+  scroll-behavior: smooth;
+}
+h1 {
+  margin: 1em 0;
+}
+#navbar {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(48, 152, 216, 20%);
+  backdrop-filter: blur(50%);
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  font-family: system-ui;
+  background: rgba(48, 152, 216, 100%);
+  margin: -0.1em 0;
+}
+.navigation li {
+  list-style-type: none;
+  font-size: 1.1em;
+  opacity: 80%;
+}
+.navigation li:hover {
+  animation-name: nav-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes nav-hover {
+  0% {
+    opacity: inherit;
+    background-color: inherit;
+    font-size: 1.1em;
+  }
+  50% {
+    opacity: 85%;
+    font-size: 1.125em;
+  }
+  100% {
+    opacity: 100%;
+    background-color: white;
+    font-size: 1.15em;
+  }
+}
+.navigation li a {
+    color: black;
+  margin: 0 1em;
+}
+
+#creds {
+  height: 100vh;
+  align-content: center;
+  display: block;
+}
+@media (max-width: 888px) {
+  height: 200vh;
+}
+.cred-grid {
+  justify-content: center;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(1em, 25.5em));
+}
+.cred-grid div {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.cred-grid div ul li {
+  font-size: 1.2em;
+}
+@media (max-width: 882px) {
+  /* there was an attempt i guess */
+  display: flex;
+  flex-position: column;
+}
+#lang {
+  background-color: rgba(240, 160, 200, 33%);
+  font-size: 1em;
+}
+#lang:hover {
+  animation-name: lang-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes lang-hover {
+  0% {background-color: rgba(240, 160, 200, 33%);
+  font-size: 1.03em;}
+  33% {background-color: rgba(240, 160, 200, 50%);
+  font-size: 1.06em;}
+  67% {background-color: rgba(240, 160, 200, 67%);
+  font-size: 1.08em;}
+  100% {background-color: rgba(240, 160, 200, 100%);
+  font-size: 1.1em;}
+}
+#frame {
+  background-color: rgba(211, 156, 230, 33%);
+  font-size: 1em;
+}
+#frame:hover {
+  animation-name: frame-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes frame-hover {
+  0% {background-color: rgba(211, 156, 230, 33%);
+  font-size: 1.03em;}
+  33% {background-color: rgba(211, 156, 230, 50%);
+  font-size: 1.06em;}
+  67% {background-color: rgba(211, 156, 230, 67%);
+  font-size: 1.08em;}
+  100% {background-color: rgba(211, 156, 230, 100%);
+  font-size: 1.1em;}
+}
+#lib {
+  background-color: rgba(125, 165, 230, 33%);
+  font-size: 1em;
+}
+#lib:hover {
+  animation-name: lib-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes lib-hover {
+  0% {background-color: rgba(125, 165, 230, 33%);
+  font-size: 1.03em;}
+  33% {background-color: rgba(125, 165, 230, 50%);
+  font-size: 1.06em;}
+  67% {background-color: rgba(125, 165, 230, 67%);
+  font-size: 1.08em;}
+  100% {background-color: rgba(125, 165, 230, 100%);
+  font-size: 1.1em;}
+}
+#tools {
+  background-color: rgba(120, 200, 150, 33%);
+  font-size: 1em;
+}
+#tools:hover {
+  animation-name: tools-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes tools-hover {
+  0% {background-color: rgba(120, 200, 150, 33%);
+  font-size: 1.03em;}
+  33% {background-color: rgba(120, 200, 150, 50%);
+  font-size: 1.06em;}
+  67% {background-color: rgba(120, 200, 150, 67%);
+  font-size: 1.08em;}
+  100% {background-color: rgba(120, 200, 150, 100%);
+  font-size: 1.1em;}
+}
+#other {
+  background-color: rgba(208, 235, 144, 33%);
+  font-size: 1em;
+}
+#other:hover {
+  animation-name: other-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes other-hover {
+  0% {background-color: rgba(208, 235, 144, 33%);
+  font-size: 1.03em;}
+  33% {background-color: rgba(208, 235, 144, 50%);
+  font-size: 1.06em;}
+  67% {background-color: rgba(208, 235, 144, 67%);
+  font-size: 1.08em;}
+  100% {background-color: rgba(208, 235, 144, 100%);
+  font-size: 1.1em;}
+}
+
+#projects {
+  height: 100vh;
+  margin-top: 50%;  /*band-aid for smaller view */
+  /* border: 1px solid rgba(48, 152, 216, 80%); */
+}
+.project-tile {
+  margin-left: 1em;
+  text-align: left;
+}
+.project-tile:hover {
+  animation-name: project-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes project-hover {
+  0% {background-color: rgba(0, 0, 0, 0%);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0%);}
+  17% {background-color: rgba(0, 0, 0, 3%);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 2.5%);}
+  33% {background-color: rgba(0, 0, 0, 7.5%);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 5%);}
+  50% {background-color: rgba(0, 0, 0, 10.5%);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 7.5%);}
+  67% {background-color: rgba(0, 0, 0, 12%);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 10%);}
+  83% {background-color: rgba(0, 0, 0, 14%);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 12.5%);}
+  100% {background-color: rgba(0, 0, 0, 15%);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 15%);}
+}
+.p-de {
+  font-family: 'Comfortaa', system-ui;
+  margin-top: -1em;
+  margin-right: 10em;
+  color: black;
+}
+.p-ex {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: black;
+}
+.p-i {
+  width: 10%;
+  display: block;
+  align-items: right;
+}
+
+#contact {
+  height: 100vh;
+  margin-top: 30%;
+}
+#contact img {
+  width: 42px;
+}
+
+#profile-link {
+  margin: 0 auto;
+  color: black;
+  background-color: rgba(48, 152, 216, 20%);
+  font-size: 2em;
+}
+#profile-link:hover {
+  animation-name: links-hover;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+}
+@keyframes links-hover {
+  0% {
+    background-color: rgba(48, 152, 216, 20%);
+    color: rgba(0, 0, 0, 90%);
+  }
+  33% {
+    background-color: rgba(48, 152, 216, 30%);
+    color: rgba(85, 85, 85, 90%);
+  }
+  67% {
+    background-color: rgba(48, 152, 216, 40%);
+    color: rgba(171, 171, 171, 90%);
+  }
+  100% {
+    background-color: rgba(48, 152, 216, 50%);
+    color: rgba(256, 256, 256, 90%);
+  }
+}
+
+#footer {
+  color: white;
+  background-color: rgba(0, 0, 0, 10%);
+  margin: 0 auto;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}

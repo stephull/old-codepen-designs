@@ -1,0 +1,144 @@
+* {
+  font-family: 'Jaldi', monospace;
+  color: hsl(121, 50%, 40%);
+}
+html {
+  margin: 0 2em;
+  scroll-behavior: smooth;
+}
+#front {
+  display: flex;
+  flex-position: row;
+}
+
+#header-img {
+  margin: -1em 1em;
+  width: 300px;
+}
+@media (max-width: 720px) {
+  #header-img {width: 240px;}
+}
+@media (max-width: 540px) {
+  #header-img {width: 180px;}
+}
+
+#banner-img {
+  object-fit: cover;
+  max-height: inherit;
+  width: inherit;
+  -webkit-mask-image:-webkit-gradient(linear, right top, right bottom, from(rgba(0,0,0,100%)), to(rgba(0,0,0,0)));
+  /* Source for webkit: https://stackoverflow.com/questions/19713813/fade-image-to-transparent-like-a-gradient */
+}
+#banner-over {
+  max-height: 720px;
+  width: 100%;
+  background: linear-gradient(90deg, lightgreen, white);
+  z-index: 998;
+}
+#pic-cap {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.5em;
+}
+
+#propose {
+  border: 1px solid gray;
+}
+#propose button {
+  font-family: 'Jaldi', monospace;
+  background-color: rgba(0, 0, 0, 10%);
+}
+#propose button:hover {
+  background-color: rgba(256, 256, 256, 20%);
+  box-shadow: 0 0 1px 1px black;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid hsl(121, 50%, 60%);
+  box-shadow: 0 0 0.5rem hsl(121, 80%, 60%);
+  font-size: 1em;
+  align-items: center;
+}
+#form {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  padding: 1em 1em;
+}
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 999;
+}
+.nav-link {
+  font-family: monospace;
+  padding: 0.2em 0.8em;
+  opacity: 90%;
+}
+.nav-link:hover {
+  opacity: 100%;
+  color: black;
+}
+
+.container {
+  text-align: center;
+  margin-top: -20em;
+  color: rgba(51, 153, 53, 100%);
+  background-color: hsl(121, 95%, 98%);
+  border-right: 1px solid hsl(130, 80%, 90%);
+  border-left: 1px solid hsl(130, 80%, 90%);
+  border-bottom: 1px solid hsl(130, 80%, 90%);
+  box-shadow: 0 0 2rem hsl(121, 80%, 90%);
+  padding: 0 1.5em;
+  z-index: 998;
+}
+.container section h2 {
+  margin-top: 4em;
+  font-size: 2em;
+  color: rgba(51, 153, 53, 100%);
+}
+.container section {
+  height: 100vh;
+}
+#sponsors {
+  margin-top: 20em;
+}
+#goals img {
+  height: 40%;
+}
+
+button {
+  color: black;
+}
+#video {
+  align-items: center;
+  height: 50%;
+  width: 80%;
+}
+@media (max-width: 720px) {
+  #video {
+    height: 25%;
+    width: 40%;
+  }
+}
+#button-video {
+  text-decoration: none;
+  color: black;
+}
+#button-video:hover {
+  font-size: 1.05em;
+}
+
+#pillars {
+  margin: 0 2em;
+  background-color: hsl(160, 60%, 95%);
+}
+#pillars dt {
+  font-weight: bold;
+}

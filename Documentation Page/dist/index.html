@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Hello World C Program Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <title>Hello World C Program Documentation Page</title>
+  </head>
+  <body>
+    
+    <!-- left side -->
+    
+    <nav id="navbar">
+      <header>
+        <h1 style="font-size: 18px; text-align: center;">Your First C Program</h1>
+      </header>
+      <ul style="list-style-type: none;">
+        <li class="nav-li"><a class="nav-link" href="#Introduction_to_C">Introduction to C</a></li>
+        <li class="nav-li"><a class="nav-link" href="#Opening_a_terminal">Opening a terminal</a></li>
+        <li class="nav-li"><a class="nav-link" href="#Basics_of_Linux">Basics of Linux</a></li>
+        <li class="nav-li">
+          <a class="nav-link" href="#Using_nano_to_edit_text">Using nano to edit text</a></li>
+        <li class="nav-li"><a class="nav-link" href="#Including_standard_input_or_output">Including standard input or output </a></li>
+        <li class="nav-li"><a class="nav-link" href="#Print_statements">Print statements</a></li>
+        <li class="nav-li"><a class="nav-link" href="#Methods_and_return_statements">Methods and return statements</a></li>
+        <li class="nav-li"><a class="nav-link" href="#Saving_your_work">Saving your work</a></li>
+        <li class="nav-li"><a class="nav-link" href="#Executing_your_Program">Executing your Program</a></li>
+        <li class="nav-li"><a class="nav-link" href="#Congratulations">Congratulations</a></li>
+      </ul>
+    </nav>
+    
+    <!-- right side -->
+    
+    <main id="main-doc">
+      <br><section>
+        <a id="end" href="https://codepen.io/stephull/pen/MWpdjvz" target="_blank">Back to Homepage</a>
+      </section>
+      <h1 style="padding-top: 1em; margin-left: 1em;">Your First C Program</h1><br>
+      <section class="main-section" id="Introduction_to_C">
+        <header class="main-titles">Introduction to C</header>
+        <p><strong>C</strong> is a programming language created in 1972. It is still widely used today and is often taught in university courses pertaining to low-level programming and systems programming due to its versatile environment and ability to work with many types of machines.</p><p>Operating systems like Windows were created using C, and other popular programming languages such as C++, C#, Java, JavaScript, Python, and PHP were influenced by the contributions of C. Today, C is regarded as one of the best programming languages to date, ranking #5 on Northeastern University's Graduate rankings on best programming languages, as well as having an average salary of about $97,000. More information is listed <a href="https://www.northeastern.edu/graduate/blog/most-popular-programming-languages/" target="_blank">here</a>!</p>
+        <p>
+          In this tutorial, we will be using C to program a very simple "Hello world" program. Although the steps may be intimidating for beginners, users will eventually pick up the pace and will learn the basics of C very quickly. 'Hello world' is universally the first program everyone writes when learning a new language, so if this is your first time learning C or any programming language, you're in the right place. </p>
+        <p><em>Without further ado, let's get started!</em></p>
+        <br>
+      </section>
+      <section class="main-section" id="Opening_a_terminal">
+        <header class="main-titles">Opening a terminal</header>
+        <p>
+          To set up a terminal, you may either use an online IDE, or integrated development environment, or download a terminal such as Ubuntu. Both options work for this tutorial; it is recommended that you download your own personal terminal if you plan to create future projects, as online IDEs are not as reliable for saving your work.</p>
+        <blockquote style="border: 1px solid black;">
+          <strong>Download instructions for Ubuntu:</strong><br>
+          <a href="https://ubuntu.com/tutorials/ubuntu-on-windows" target="_blank">Windows</a><br>
+          <a href="https://www.macworld.co.uk/how-to/how-install-linux-on-mac-3637265/" target="_blank">Mac</a>
+        </blockquote>
+        <img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/2X/7/78c42837d43e6483cfff3c1b20d6d27ae89e198d_2_690x408.png" id="ubuntu-pic" height="320" width="480">
+        <figcaption>Example of an Ubuntu terminal. &copy;Ubuntu</figcaption><br>
+      </section>
+      <section class="main-section" id="Basics_of_Linux">
+        <header class="main-titles">Basics of Linux</header>
+        <p>
+          Ubuntu, like many other types of terminals, are open-source softwares that run on Linux and Unix. Linux operates as a kernel and is the most popular open-source source of software collaboration, so much so that almost all smartphones are operated on Linux, and the majority of our cloud infrastructure was built on Linux. 
+        </p>
+        <p>
+          Much of the terminal interface can be decided by the user, or administrator depending on who gets certain permissions. Here are some simple commands to get you comfortable with Linux:
+          <ul id="linux-ex" style="list-style-type: square;">
+            <li><span><b>ls</b></span></li>
+          lists all present files in the directory
+        <li><span><b>cd</b></span></li>
+        changes directory
+        <li><span><b>mkdir</b></span></li>
+        creates a new directory/path
+        <li><span><b>rmdir</b></span></li>
+        removes a directory/path
+        <li><span><b>pwd</b></span></li>
+        returns path of the current directory
+        <li><span><b>more</b></span></li>
+        views the contents of a file or multiple files
+        <li><span><b>rm</b></span></li>
+        removes a particular file or set of similar files
+        <li><span><b>touch</b></span></li>
+        creates a file, does not redirect to any text editor
+        <li><span><b>cp</b></span></li>
+        copies a file contents
+        <li><span><b>mv</b></span></li>
+        moves a file into different directories
+        <li><span><b>echo</b></span></li>
+        repeats the desired keyword or phrase that user inputs
+        <li><span><b>cat</b></span></li>
+        repeats file contents in plain text, concatenated
+        <li><span><b>grep</b></span></li>
+        search for expressions in a file
+          </ul>
+        </p><br>
+    <p><b>
+      More information on how to use Linux can be seen <a href="https://www.guru99.com/linux-commands-cheat-sheet.html" target="_blank">here</a></b>.
+    </p><br>
+      </section>
+      <section class="main-section" id="Using_nano_to_edit_text">
+        <header class="main-titles">Using nano to edit text</header>
+        <p>
+          We left out one more important command: <b>nano</b>. This is the command you use to enter the nano text-editor. The instructions are simple:
+          <code>nano {filename} </code>
+          Filenames that run on C code will have the filename extension <code>.c</code>
+        </p>
+      </section>
+      <section class="main-section" id="Including_standard_input_or_output">
+        <header class="main-titles">Including standard input or output</header>
+        <p>When creating a new C program, always preface your code with the following statement:
+          <code>#include &lt;stdio.h&gt; </code>
+        </p>
+        <p>
+          The statement above indicates that the program you're writing is applicable for input and output methods, such as typing into a program (input) or reading the contents back from the program (output). In this tutorial, we want the terminal to print our statement upon execution. In other words, we want the output.</p>
+        <p>
+          It is good practice to keep using <code>#include &lt;stdio.h&gt;</code> when creating C files, as this lessens the chance of receiving an error or exception when compiling your program. 
+        </p><br>
+      </section>
+      <section class="main-section" id="Print_statements">
+        <header class="main-titles">Print statements</header>
+        <p>
+          A simple print statement can be made using the following: <code>printf();</code>
+          (Don't forget the semicolons at the end!)<br>
+        Within the brackets, we can insert whatever text we want, enclosed in quotation marks. It is also useful to consider escape characters.  
+        </p>
+        <p>
+          One escape character that is especially useful is <code>\n</code>This indicates a newline escape character, where text is directed to the line after the escape character is declared. 
+        </p>
+        <p>
+          To learn more about other escape characters, click here.
+        </p>
+        <br>
+        <p>
+          In our tutorial, we want to print "Hello world", that's it. Therefore, we can type the following:
+          <code>
+            printf("Hello world");
+          </code>
+          We can also utilize our newline character by typing <code>printf("Hello world\n");</code>
+          This is also useful when the terminal finishes and the prompt line does not interfere with the contents printed. Try this yourself. 
+        </p><br>
+      </section>
+      <section class="main-section" id="Methods_and_return_statements">
+        <header class="main-titles">Methods and return statements</header>
+        <p>
+          We cannot simply print a statement alone. In order for this to work, we need to enclose our code within at least one function, the main function.<br>
+          Typically, the main method may look like this:
+          <code>int main() { }</code>
+          Or this:
+          <code>void main() { }</code>
+        </p>
+        <p>
+          The only real difference between the two is that <b>int</b> requires that an integer value returns at the end of the function while <b>void</b> returns nothing, and no return statement needs to be explicitly created.</p>
+        <p>
+          Every return statement, such as the case with our function, may look like this:
+          <code>return 0;</code>
+          The 0 returns <em>something</em>; there is no significance other than the fact that we have an integer to pass through once our program is done. 
+        </p>
+        <p>
+          In our program, we will be using <code>int main() { }</code> to enclose our print statement. It is up to you whether we need a return statement or not <s>(spoiler: we need it)</s>.
+        </p>
+        <br>
+      </section>
+      <section class="main-section" id="Saving_your_work">
+        <header class="main-titles">Saving your work</header>
+        <p>
+          By the time you've reached this part of the tutorial, your code should look like this:
+          <code>
+            #include &lt;stdio.h&gt;<br><br>
+            int main() {<br>
+                &emsp;printf("Hello world\n");<br>
+                &emsp;return 0;<br>
+            }
+          </code>
+          If not, check back to see which parts you're missing.
+        </p>
+        <p>
+          Once you're finished, using nano, all you need to do is <b>Ctrl + S</b> to save your work. To exit out of nano, simply type in <b>Ctrl + X</b>. If you need to cancel, for whatever reason, you can cancel your work using <b>Ctrl + C</b>. Depending on your save state, nano may ask to save your work. All yes and no options are to be answered with <b>'Y'</b> and <b>'N'</b>, respectively.
+        </p><br>
+      </section>
+      <section class="main-section" id="Executing_your_Program">
+        <header class="main-titles">Executing your Program</header>
+        <p>
+          Last but not least, after all the hard work, we want to execute our program. Let's assume that our filename is something like <b>test.c</b>, and we want the executable, which is what we use to execute the program itself, to be named <b>test</b>. Therefore, we need to type:
+          <code>gcc -o test test.c</code>
+        </p>
+        <p>
+          A new executable file will appear in the directory you created your file (by default, there are instructions for later on how to create executables into specific directories). The last step is to ensure that the executable works with:
+          <code>./test</code>
+          The &ensp;<b>./</b>&ensp; signals to the computer that the executable is ready to, well, execute. 
+        </p>
+      </section>
+      <section class="main-section" id="Congratulations">
+      <header class="main-titles">Congratulations</header>
+        <p>You've completed your first C program. Cheers to you! I wish you well on your next steps to learning how to program in C.</p>
+      <iframe id="youtube-demo" width="480" height="360" src="https://www.youtube.com/watch?v=attUrDwfdr8"></iframe>
+        <figcaption>Credits to &copy; Gamerboy</figcaption>
+        <button><a style="text-decoration: none;" href="https://www.youtube.com/watch?v=attUrDwfdr8" target="_blank">Video</a></button>
+        </section>
+      <br>
+      <section>
+        <a id="end" href="https://codepen.io/stephull/pen/MWpdjvz" target="_blank">Back to Homepage</a>
+      </section>
+    </main>
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
